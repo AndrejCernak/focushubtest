@@ -1,212 +1,215 @@
 {
- "actions": [],
- "autoname": "autoincrement",
- "creation": "2025-03-11 14:41:21.201417",
- "doctype": "DocType",
- "engine": "InnoDB",
- "field_order": [
-  "hlavn\u00e9_polia_section",
-  "invoice_number",
-  "date_issued",
-  "due_date",
-  "dod\u00e1vate\u013e_section",
-  "supplier_name",
-  "supplier_address",
-  "supplier_ico",
-  "supplier_dic",
-  "supplier_icdph",
-  "odberate\u013e_section",
-  "customer_name",
-  "customer_address",
-  "customer_ico",
-  "customer_dic",
-  "customer_icdph",
-  "polo\u017eky_section",
-  "items",
-  "celkov\u00e9_sumy_section",
-  "total_without_tax",
-  "total_tax",
-  "total_with_tax",
-  "\u00fadaje_o_platbe_section",
-  "bank_account",
-  "variable_symbol",
-  "constant_symbol",
-  "specific_symbol",
-  "section_break_otox",
-  "linked_prijmy"
- ],
- "fields": [
-  {
-   "fieldname": "invoice_number",
-   "fieldtype": "Data",
-   "label": "invoice number"
-  },
-  {
-   "fieldname": "date_issued",
-   "fieldtype": "Date",
-   "label": "date issued"
-  },
-  {
-   "fieldname": "due_date",
-   "fieldtype": "Date",
-   "label": "due date"
-  },
-  {
-   "fieldname": "hlavn\u00e9_polia_section",
-   "fieldtype": "Section Break",
-   "label": "Hlavn\u00e9 polia"
-  },
-  {
-   "fieldname": "dod\u00e1vate\u013e_section",
-   "fieldtype": "Section Break",
-   "label": "Dod\u00e1vate\u013e"
-  },
-  {
-   "fieldname": "supplier_name",
-   "fieldtype": "Data",
-   "label": "supplier name"
-  },
-  {
-   "fieldname": "supplier_address",
-   "fieldtype": "Text",
-   "label": "supplier address"
-  },
-  {
-   "fieldname": "supplier_ico",
-   "fieldtype": "Data",
-   "label": "supplier ico"
-  },
-  {
-   "fieldname": "supplier_dic",
-   "fieldtype": "Data",
-   "label": "supplier dic"
-  },
-  {
-   "fieldname": "supplier_icdph",
-   "fieldtype": "Data",
-   "label": "supplier icdph"
-  },
-  {
-   "fieldname": "odberate\u013e_section",
-   "fieldtype": "Section Break",
-   "label": "Odberate\u013e"
-  },
-  {
-   "fieldname": "customer_name",
-   "fieldtype": "Data",
-   "label": "customer_name"
-  },
-  {
-   "fieldname": "customer_address",
-   "fieldtype": "Text",
-   "label": "customer address"
-  },
-  {
-   "fieldname": "customer_ico",
-   "fieldtype": "Data",
-   "label": "customer ico"
-  },
-  {
-   "fieldname": "customer_dic",
-   "fieldtype": "Data",
-   "label": "customer dic"
-  },
-  {
-   "fieldname": "customer_icdph",
-   "fieldtype": "Data",
-   "label": "customer icdph"
-  },
-  {
-   "fieldname": "polo\u017eky_section",
-   "fieldtype": "Section Break",
-   "label": "Polo\u017eky "
-  },
-  {
-   "fieldname": "items",
-   "fieldtype": "Table",
-   "label": "items",
-   "options": "Faktura_items"
-  },
-  {
-   "fieldname": "celkov\u00e9_sumy_section",
-   "fieldtype": "Section Break",
-   "label": "Celkov\u00e9 sumy"
-  },
-  {
-   "fieldname": "total_without_tax",
-   "fieldtype": "Currency",
-   "label": "total without tax"
-  },
-  {
-   "fieldname": "total_tax",
-   "fieldtype": "Currency",
-   "label": "total tax"
-  },
-  {
-   "fieldname": "total_with_tax",
-   "fieldtype": "Currency",
-   "label": "total with tax"
-  },
-  {
-   "fieldname": "\u00fadaje_o_platbe_section",
-   "fieldtype": "Section Break",
-   "label": "\u00dadaje o platbe"
-  },
-  {
-   "fieldname": "bank_account",
-   "fieldtype": "Data",
-   "label": "bank account"
-  },
-  {
-   "fieldname": "variable_symbol",
-   "fieldtype": "Data",
-   "label": "variable symbol"
-  },
-  {
-   "fieldname": "constant_symbol",
-   "fieldtype": "Data",
-   "label": "constant symbol"
-  },
-  {
-   "fieldname": "specific_symbol",
-   "fieldtype": "Data",
-   "label": "specific symbol"
-  },
-  {
-   "fieldname": "section_break_otox",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "linked_prijmy",
-   "fieldtype": "Link",
-   "hidden": 1,
-   "label": "Linked Prijmy",
-   "options": "Prijmy"
+    "actions": [],
+    "autoname": "autoincrement",
+    "creation": "2025-03-11 14:41:21.201417",
+    "doctype": "DocType",
+    "engine": "InnoDB",
+    "field_order": [
+      "hlavné_polia_section",
+      "cislo_faktury",
+      "datum_vydania",
+      "datum_splatnosti",
+      "dodávateľ_section",
+      "meno_dodavatela",
+      "adresa_dodavatela",
+      "ico_dodavatela",
+      "dic_dodavatela",
+      "icdph_dodavatela",
+      "odberateľ_section",
+      "email_zakaznika",
+      "adresa_zakaznika",
+      "ico_zakaznika",
+      "dic_zakaznika",
+      "icdph_zakaznika",
+      "polozky_section",
+      "polozky",
+      "celkove_sumy_section",
+      "celkom_bez_dane",
+      "celkom_dan",
+      "celkom_s_danou",
+      "udaje_o_platbe_section",
+      "bankovy_ucet",
+      "variabilny_symbol",
+      "konstantny_symbol",
+      "specificky_symbol",
+      "section_break_otox",
+      "linked_prijmy"
+    ],
+    "fields": [
+      {
+        "fieldname": "hlavné_polia_section",
+        "fieldtype": "Section Break",
+        "label": "Hlavné polia"
+      },
+      {
+        "fieldname": "cislo_faktury",
+        "fieldtype": "Data",
+        "label": "Číslo Faktúry"
+      },
+      {
+        "fieldname": "datum_vydania",
+        "fieldtype": "Date",
+        "label": "Dátum vydania"
+      },
+      {
+        "fieldname": "datum_splatnosti",
+        "fieldtype": "Date",
+        "label": "Dátum splatnosti"
+      },
+      {
+        "fieldname": "dodávateľ_section",
+        "fieldtype": "Section Break",
+        "label": "Dodávateľ"
+      },
+      {
+        "fieldname": "meno_dodavatela",
+        "fieldtype": "Data",
+        "label": "Meno dodávateľa"
+      },
+      {
+        "fieldname": "adresa_dodavatela",
+        "fieldtype": "Text",
+        "label": "Adresa dodávateľa"
+      },
+      {
+        "fieldname": "ico_dodavatela",
+        "fieldtype": "Data",
+        "label": "IČO dodávateľa"
+      },
+      {
+        "fieldname": "dic_dodavatela",
+        "fieldtype": "Data",
+        "label": "DIČ dodávateľa"
+      },
+      {
+        "fieldname": "icdph_dodavatela",
+        "fieldtype": "Data",
+        "label": "IČDPH dodávateľa"
+      },
+      {
+        "fieldname": "odberateľ_section",
+        "fieldtype": "Section Break",
+        "label": "Odberateľ"
+      },
+      {
+        "fieldname": "email_zakaznika",
+        "fieldtype": "Data",
+        "label": "Email zákazníka"
+      },
+      {
+        "fieldname": "adresa_zakaznika",
+        "fieldtype": "Text",
+        "label": "Adresa zákazníka"
+      },
+      {
+        "fieldname": "ico_zakaznika",
+        "fieldtype": "Data",
+        "label": "IČO zákazníka"
+      },
+      {
+        "fieldname": "dic_zakaznika",
+        "fieldtype": "Data",
+        "label": "DIČ zákazníka"
+      },
+      {
+        "fieldname": "icdph_zakaznika",
+        "fieldtype": "Data",
+        "label": "IČDPH zákazníka"
+      },
+      {
+        "fieldname": "polozky_section",
+        "fieldtype": "Section Break",
+        "label": "Položky"
+      },
+      {
+        "fieldname": "polozky",
+        "fieldtype": "Table",
+        "label": "Položky",
+        "options": "Faktura_items",
+        "editable_grid": 1
+      },
+      {
+        "fieldname": "celkove_sumy_section",
+        "fieldtype": "Section Break",
+        "label": "Celkové sumy"
+      },
+      {
+        "fieldname": "celkom_bez_dane",
+        "fieldtype": "Currency",
+        "label": "Celkom bez dane"
+      },
+      {
+        "fieldname": "celkom_dan",
+        "fieldtype": "Currency",
+        "label": "Celkom daň"
+      },
+      {
+        "fieldname": "celkom_s_danou",
+        "fieldtype": "Currency",
+        "label": "Celkom s daňou"
+      },
+      {
+        "fieldname": "udaje_o_platbe_section",
+        "fieldtype": "Section Break",
+        "label": "Údaje o platbe"
+      },
+      {
+        "fieldname": "bankovy_ucet",
+        "fieldtype": "Data",
+        "label": "Bankový účet"
+      },
+      {
+        "fieldname": "variabilny_symbol",
+        "fieldtype": "Data",
+        "label": "Variabilný symbol"
+      },
+      {
+        "fieldname": "konstantny_symbol",
+        "fieldtype": "Data",
+        "label": "Konštantný symbol"
+      },
+      {
+        "fieldname": "specificky_symbol",
+        "fieldtype": "Data",
+        "label": "Špecifický symbol"
+      },
+      {
+        "fieldname": "section_break_otox",
+        "fieldtype": "Section Break",
+        "label": ""
+      },
+      {
+        "fieldname": "linked_prijmy",
+        "fieldtype": "Link",
+        "hidden": 1,
+        "label": "Linked Prijmy",
+        "options": "Prijmy"
+      }
+    ],
+    "index_web_pages_for_search": 1,
+    "links": [],
+    "modified": "2025-03-12 12:56:10.729695",
+    "modified_by": "Administrator",
+    "module": "Focus Hub",
+    "name": "Faktura Vystavena",
+    "naming_rule": "Autoincrement",
+    "owner": "Administrator",
+    "permissions": [
+      {
+        "create": 1,
+        "delete": 1,
+        "email": 1,
+        "export": 1,
+        "print": 1,
+        "read": 1,
+        "report": 1,
+        "role": "System Manager",
+        "share": 1,
+        "write": 1
+      }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": []
   }
- ],
- "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-03-12 12:56:10.729695",
- "modified_by": "Administrator",
- "module": "Focus Hub",
- "name": "Faktura Vystavena",
- "naming_rule": "Autoincrement",
- "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
- "sort_field": "modified",
- "sort_order": "DESC",
- "states": []
-}
+  

@@ -1,72 +1,73 @@
 {
- "actions": [],
- "allow_rename": 1,
- "creation": "2025-03-11 23:11:45.194894",
- "doctype": "DocType",
- "engine": "InnoDB",
- "field_order": [
-  "item_name",
-  "description",
-  "quantity",
-  "unit_price",
-  "unit",
-  "tax_rate",
-  "tax_amount",
-  "total_price"
- ],
- "fields": [
-  {
-   "fieldname": "item_name",
-   "fieldtype": "Data",
-   "label": "item name"
-  },
-  {
-   "fieldname": "description",
-   "fieldtype": "Text",
-   "label": "description"
-  },
-  {
-   "fieldname": "quantity",
-   "fieldtype": "Float",
-   "label": "quantity"
-  },
-  {
-   "fieldname": "unit_price",
-   "fieldtype": "Currency",
-   "label": "unit price"
-  },
-  {
-   "description": "napr. ks,hodiny",
-   "fieldname": "unit",
-   "fieldtype": "Data",
-   "label": "unit"
-  },
-  {
-   "fieldname": "tax_rate",
-   "fieldtype": "Percent",
-   "label": "tax rate"
-  },
-  {
-   "fieldname": "tax_amount",
-   "fieldtype": "Currency",
-   "label": "tax amount"
-  },
-  {
-   "fieldname": "total_price",
-   "fieldtype": "Currency",
-   "label": "total price"
-  }
- ],
- "index_web_pages_for_search": 1,
- "istable": 1,
- "links": [],
- "modified": "2025-03-11 23:53:25.543669",
- "modified_by": "Administrator",
- "module": "Focus Hub",
- "name": "Faktura_items",
- "owner": "Administrator",
- "permissions": [],
- "sort_field": "modified",
- "sort_order": "DESC",
- "states": []
+  "actions": [],
+  "allow_rename": 1,
+  "creation": "2025-03-11 23:11:45.194894",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "nazov_polozky",
+    "popis",
+    "mnozstvo",
+    "cena_polozky",
+    "jednotka",
+    "sadzba_dane",
+    "vyska_dane",
+    "celkova_suma"
+  ],
+  "fields": [
+    {
+      "fieldname": "nazov_polozky",
+      "fieldtype": "Data",
+      "label": "Názov položky"
+    },
+    {
+      "fieldname": "popis",
+      "fieldtype": "Text",
+      "label": "Popis"
+    },
+    {
+      "fieldname": "mnozstvo",
+      "fieldtype": "Float",
+      "label": "Množstvo"
+    },
+    {
+      "fieldname": "cena_polozky",
+      "fieldtype": "Currency",
+      "label": "Cena položky"
+    },
+    {
+      "fieldname": "jednotka",
+      "fieldtype": "Data",
+      "label": "Jednotka",
+      "description": "napr. ks,hodiny"
+    },
+    {
+      "fieldname": "sadzba_dane",
+      "fieldtype": "Percent",
+      "label": "Sadzba dane"
+    },
+    {
+      "fieldname": "vyska_dane",
+      "fieldtype": "Currency",
+      "label": "Výška dane"
+    },
+    {
+      "fieldname": "celkova_suma",
+      "fieldtype": "Currency",
+      "label": "Celková suma"
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "istable": 1,
+  "editable_grid": 1,
+  "links": [],
+  "modified": "2025-03-11 23:53:25.543669",
+  "modified_by": "Administrator",
+  "module": "Focus Hub",
+  "name": "Faktura_items",
+  "owner": "Administrator",
+  "permissions": [],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": []
 }

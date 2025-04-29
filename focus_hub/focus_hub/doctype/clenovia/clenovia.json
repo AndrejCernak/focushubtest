@@ -5,12 +5,12 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "customer_name",
+  "meno_zakaznika",
   "email",
-  "created_at",
-  "member_tag",
-  "external_id",
-  "last_synced"
+  "vytvorene",
+  "clenstvo",
+  "externe_id",
+  "naposledy_synchronizovane"
  ],
  "fields": [
   {
@@ -20,30 +20,30 @@
    "label": "Email"
   },
   {
-   "fieldname": "external_id",
+   "fieldname": "externe_id",
    "fieldtype": "Data",
-   "label": "External ID"
+   "label": "Extern\u00e9 ID"
   },
   {
-   "fieldname": "last_synced",
+   "fieldname": "naposledy_synchronizovane",
    "fieldtype": "Datetime",
-   "label": "Last Synced"
+   "label": "Naposledy synchronizovan\u00e9"
   },
   {
-   "fieldname": "customer_name",
+   "fieldname": "meno_zakaznika",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Customer name"
+   "label": "Meno Z\u00e1kazn\u00edka"
   },
   {
-   "fieldname": "created_at",
+   "fieldname": "vytvorene",
    "fieldtype": "Datetime",
-   "label": "Created at"
+   "label": "Vytvoren\u00e9"
   },
   {
-   "fieldname": "member_tag",
+   "fieldname": "clenstvo",
    "fieldtype": "Data",
-   "label": "Member Tag"
+   "label": "\u010clenstvo"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -51,7 +51,7 @@
  "modified": "2025-03-12 20:37:53.676419",
  "modified_by": "Administrator",
  "module": "Focus Hub",
- "name": "Customer",
+ "name": "Clenovia",
  "owner": "Administrator",
  "permissions": [
   {

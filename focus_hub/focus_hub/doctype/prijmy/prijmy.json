@@ -1,66 +1,67 @@
 {
- "actions": [],
- "autoname": "autoincrement",
- "creation": "2025-03-11 14:33:30.359814",
- "doctype": "DocType",
- "engine": "InnoDB",
- "field_order": [
-  "title",
-  "external_id",
-  "date_issued",
-  "customer_email",
-  "total_value"
- ],
- "fields": [
-  {
-   "fieldname": "title",
-   "fieldtype": "Data",
-   "label": "order number"
-  },
-  {
-   "fieldname": "external_id",
-   "fieldtype": "Data",
-   "label": "External ID"
-  },
-  {
-   "fieldname": "date_issued",
-   "fieldtype": "Date",
-   "label": "date issued"
-  },
-  {
-   "fieldname": "customer_email",
-   "fieldtype": "Data",
-   "label": "customer email"
-  },
-  {
-   "fieldname": "total_value",
-   "fieldtype": "Currency",
-   "label": "total value"
+    "actions": [],
+    "autoname": "autoincrement",
+    "creation": "2025-03-11 14:33:30.359814",
+    "doctype": "DocType",
+    "engine": "InnoDB",
+    "field_order": [
+      "nazov",
+      "externe_id",
+      "datum_vydania",
+      "email_zakaznika",
+      "celkova_suma"
+    ],
+    "fields": [
+      {
+        "fieldname": "nazov",
+        "fieldtype": "Data",
+        "label": "Názov"
+      },
+      {
+        "fieldname": "externe_id",
+        "fieldtype": "Data",
+        "label": "Externé ID"
+      },
+      {
+        "fieldname": "datum_vydania",
+        "fieldtype": "Date",
+        "label": "Dátum vydania"
+      },
+      {
+        "fieldname": "email_zakaznika",
+        "fieldtype": "Data",
+        "label": "Email zákaznika"
+      },
+      {
+        "fieldname": "celkova_suma",
+        "fieldtype": "Currency",
+        "label": "Celková suma"
+      }
+    ],
+    "index_web_pages_for_search": 1,
+    "links": [],
+    "modified": "2025-03-12 12:19:30.511725",
+    "modified_by": "Administrator",
+    "module": "Focus Hub",
+    "name": "Prijmy",
+    "naming_rule": "Autoincrement",
+    "owner": "Administrator",
+    "permissions": [
+      {
+        "create": 1,
+        "delete": 1,
+        "email": 1,
+        "export": 1,
+        "print": 1,
+        "read": 1,
+        "report": 1,
+        "role": "System Manager",
+        "share": 1,
+        "write": 1
+      }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": []
   }
- ],
- "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-03-12 12:19:30.511725",
- "modified_by": "Administrator",
- "module": "Focus Hub",
- "name": "Prijmy",
- "naming_rule": "Autoincrement",
- "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
- "sort_field": "modified",
- "sort_order": "DESC",
- "states": []
-}
+  

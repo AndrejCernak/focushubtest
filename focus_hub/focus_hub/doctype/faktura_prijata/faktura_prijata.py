@@ -3,24 +3,25 @@ from frappe.model.document import Document
 from frappe.utils import nowdate
 
 class FakturaPrijata(Document):
+    def before_save(self):
+        # Nastav variabilny_symbol = cislo_faktury ak nie je vyplnený
+        if self.cislo_faktury and not self.variabilny_symbol:
+            self.variabilny_symbol = self.cislo_faktury
+
     def on_update(self):
-        # If your doctype is submittable (has a Submit button).
-        # Otherwise, use on_update or before_save.
-
-        # 1. Check if we already created a Vydavky record
+        # 1. Skontroluj, či už je vytvorený záznam vo Vydavkoch
         if self.linked_vydavky:
-            return  # Avoid creating duplicates
+            return  # Zamedz duplikácii
 
-        # 2. Create a new Vydavky document
+        # 2. Vytvor nový záznam Vydavky
         vydavky_doc = frappe.get_doc({
             "doctype": "Vydavky",
-            "title": f"Invoice {self.invoice_number}",  # or any other naming
-            "date": self.date_issued or nowdate(),
-            "amount": self.total_with_tax or 0.0,
-            # Add more fields if needed (e.g. external_id, notes, etc.)
+            "nazov": f"Faktúra {self.cislo_faktury}",
+            "datum": self.datum_vydania or nowdate(),
+            "suma": self.celkom_s_danou or 0.0
         })
         vydavky_doc.insert(ignore_permissions=True)
 
-        # 3. Link it back to Faktura Prijata
+        # 3. Prepoj ho späť na Faktura Prijata
         self.linked_vydavky = vydavky_doc.name
         self.save(ignore_permissions=True)

@@ -228,6 +228,7 @@ add_to_apps_screen = [
 # 	}
 # ]
 
+
 # Authentication and authorization
 # --------------------------------
 
@@ -241,12 +242,17 @@ add_to_apps_screen = [
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-
 scheduler_events = {
     "hourly": [
         "focus_hub.integrations.squarespace_integration.main",
         "focus_hub.integrations.circle_integration.main"
-
     ]
 }
 
+# This line enables the custom sidebar
+app_include_js = "/assets/focus_hub/js/focus_hub.js"
+
+# Add this to make sure sidebar loads your module
+override_whitelisted_modules = {
+    "focus_hub": "focus_hub.config.focus_hub"
+}

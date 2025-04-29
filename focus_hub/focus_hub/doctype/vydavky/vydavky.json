@@ -1,72 +1,73 @@
 {
- "actions": [],
- "autoname": "autoincrement",
- "creation": "2025-03-11 14:38:59.850459",
- "doctype": "DocType",
- "engine": "InnoDB",
- "field_order": [
-  "title",
-  "date",
-  "amount",
-  "external_id",
-  "last_synced",
-  "notes"
- ],
- "fields": [
-  {
-   "fieldname": "title",
-   "fieldtype": "Data",
-   "label": "Title"
-  },
-  {
-   "fieldname": "date",
-   "fieldtype": "Date",
-   "label": "Date"
-  },
-  {
-   "fieldname": "amount",
-   "fieldtype": "Currency",
-   "label": "Amount"
-  },
-  {
-   "fieldname": "external_id",
-   "fieldtype": "Data",
-   "label": "External ID"
-  },
-  {
-   "fieldname": "last_synced",
-   "fieldtype": "Datetime",
-   "label": "Last Synced"
-  },
-  {
-   "fieldname": "notes",
-   "fieldtype": "Text",
-   "label": "Notes"
+    "actions": [],
+    "autoname": "autoincrement",
+    "creation": "2025-03-11 14:38:59.850459",
+    "doctype": "DocType",
+    "engine": "InnoDB",
+    "field_order": [
+      "nazov",
+      "datum",
+      "suma",
+      "externe_id",
+      "naposledy_synchronizovane",
+      "poznamky"
+    ],
+    "fields": [
+      {
+        "fieldname": "nazov",
+        "fieldtype": "Data",
+        "label": "Názov"
+      },
+      {
+        "fieldname": "datum",
+        "fieldtype": "Date",
+        "label": "Dátum"
+      },
+      {
+        "fieldname": "suma",
+        "fieldtype": "Currency",
+        "label": "Suma"
+      },
+      {
+        "fieldname": "externe_id",
+        "fieldtype": "Data",
+        "label": "Externé ID"
+      },
+      {
+        "fieldname": "naposledy_synchronizovane",
+        "fieldtype": "Datetime",
+        "label": "Naposledy synchronizované"
+      },
+      {
+        "fieldname": "poznamky",
+        "fieldtype": "Text",
+        "label": "Poznámky"
+      }
+    ],
+    "index_web_pages_for_search": 1,
+    "links": [],
+    "modified": "2025-03-12 02:14:59.654826",
+    "modified_by": "Administrator",
+    "module": "Focus Hub",
+    "name": "Vydavky",
+    "naming_rule": "Autoincrement",
+    "owner": "Administrator",
+    "permissions": [
+      {
+        "create": 1,
+        "delete": 1,
+        "email": 1,
+        "export": 1,
+        "print": 1,
+        "read": 1,
+        "report": 1,
+        "role": "System Manager",
+        "share": 1,
+        "write": 1
+      }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": []
   }
- ],
- "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-03-12 02:14:59.654826",
- "modified_by": "Administrator",
- "module": "Focus Hub",
- "name": "Vydavky",
- "naming_rule": "Autoincrement",
- "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
- "sort_field": "modified",
- "sort_order": "DESC",
- "states": []
-}
+  

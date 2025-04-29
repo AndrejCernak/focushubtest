@@ -6,65 +6,61 @@ def fetch_and_write_orders():
     url = "https://api.squarespace.com/1.0/commerce/orders"
     payload = {}
     headers = {
-        "Authorization": "Bearer 1ea8f560-c83b-48c4-a077-f79c5911d927", 
+        "Authorization": "Bearer 1ea8f560-c83b-48c4-a077-f79c5911d927",
         "Content-Type": "application/json",
     }
 
     response = requests.request("GET", url, headers=headers, data=payload)
     print("Status Code:", response.status_code)
-    print("Raw Response:", response.text)  
+    print("Raw Response:", response.text)
 
     try:
         data = response.json()
     except Exception as e:
         frappe.log_error(message=str(e), title="Squarespace JSON Parse Error")
-        return "Error parsing JSON"
+        return "Chyba pri spracovaní JSON odpovede"
 
     orders = data.get("result", [])
-    print(f"Fetched {len(orders)} orders from 'result'")
+    print(f"Načítaných {len(orders)} objednávok zo 'result'")
 
     for order in orders:
         process_order(order)
 
-    return f"Processed {len(orders)} orders."
+    return f"Spracovaných {len(orders)} objednávok."
+
 
 def process_order(order):
-    """
-    Extracts basic info from the Squarespace order and inserts a new record into the Prijmy doctype.
-    Adjust field names as needed for your actual doctype fields.
-    """
-    external_id = order.get("id")
-    order_number = order.get("orderNumber")
-    created_on = order.get("createdOn")  
-    customer_email = order.get("customerEmail")
+    externe_id = order.get("id")
+    cislo_objednavky = order.get("orderNumber")
+    vytvorene_raw = order.get("createdOn")
+    email_zakaznika = order.get("customerEmail")
 
-    grand_total_str = order.get("grandTotal", {}).get("value", "0.00")
+    cena_spolu_raw = order.get("grandTotal", {}).get("value", "0.00")
     try:
-        total_value = float(grand_total_str)
+        celkova_suma = float(cena_spolu_raw)
     except ValueError:
-        total_value = 0.0
+        celkova_suma = 0.0
 
-    if frappe.db.exists("Prijmy", {"external_id": external_id}):
+    if frappe.db.exists("Prijmy", {"externe_id": externe_id}):
         return
 
     try:
-        date_issued = created_on.split("T")[0] if created_on else None
+        datum_vydania = vytvorene_raw.split("T")[0] if vytvorene_raw else None
 
         doc = frappe.get_doc({
             "doctype": "Prijmy",
-            "external_id": external_id,
-            "order_number": order_number,
-            "date_issued": date_issued,
-            "customer_email": customer_email,
-            "total_value": total_value,
-            "last_synced": now_datetime(),
-            "title": f"Order {order_number}"
+            "externe_id": externe_id,
+            "nazov": f"Objednávka {cislo_objednavky}",
+            "datum_vydania": datum_vydania,
+            "email_zakaznika": email_zakaznika,
+            "celkova_suma": celkova_suma
         })
         doc.insert(ignore_permissions=True)
         frappe.db.commit()
-        print(f"Created Prijmy record for order {order_number}")
+        print(f"Záznam Príjmy vytvorený pre objednávku {cislo_objednavky}")
     except Exception as e:
-        frappe.log_error(message=str(e), title="Error Creating Prijmy Record")
+        frappe.log_error(message=str(e), title="Chyba pri vytváraní záznamu Prijmy")
+
 
 def main():
     return fetch_and_write_orders()
