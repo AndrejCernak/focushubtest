@@ -1,0 +1,8 @@
+{
+  "title": "FocusHub Dashboard",
+  "name": "focushub_dashboard",
+  "doctype": "Page",
+  "module": "Focus Hub",
+  "standard": "Yes",
+  "developer_mode": 1
+}
