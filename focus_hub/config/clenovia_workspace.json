@@ -1,0 +1,24 @@
+{
+    "label": "Členovia",
+    "module": "Focus Hub",
+    "type": "module",
+    "icon": "octicon octicon-organization",
+    "app": "focus_hub",
+    "is_standard": 1,
+    "public": 1,
+    "content": [
+      {
+        "type": "card",
+        "label": "Členovia",
+        "icon": "octicon octicon-organization",
+        "items": [
+          {
+            "type": "doctype",
+            "name": "Clenovia",
+            "label": "Členovia"
+          }
+        ]
+      }
+    ]
+  }
+  
