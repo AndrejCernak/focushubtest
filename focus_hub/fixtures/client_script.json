@@ -1,0 +1,24 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Faktura Vystavena",
+  "enabled": 1,
+  "modified": "2025-05-04 18:57:00.325375",
+  "module": "Focus Hub",
+  "name": "cena polozky",
+  "script": "frappe.ui.form.on('Faktura Vystavena', {\n\trefresh(frm) {\n\t\t// your code here\n\t}\n})\n\nfrappe.ui.form.on('Faktura_items', {\n    mnozstvo: calculate_item_total,\n    cena_polozky: calculate_item_total\n});\n\nfunction calculate_item_total(frm, cdt, cdn) {\n    let row = locals[cdt][cdn];\n    if (row.mnozstvo && row.cena_polozky) {\n        row.celkova_suma = flt(row.mnozstvo) * flt(row.cena_polozky);\n        frm.refresh_field('polozky'); // replace with the actual child table fieldname if different\n    }\n}\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Faktura Prijata",
+  "enabled": 1,
+  "modified": "2025-05-04 18:57:27.847345",
+  "module": "Focus Hub",
+  "name": "cena polozky faktura prijata",
+  "script": "frappe.ui.form.on('Faktura Prijata', {\n\trefresh(frm) {\n\t\t// your code here\n\t}\n})\n\nfrappe.ui.form.on('Faktura_items', {\n    mnozstvo: calculate_item_total,\n    cena_polozky: calculate_item_total\n});\n\nfunction calculate_item_total(frm, cdt, cdn) {\n    let row = locals[cdt][cdn];\n    if (row.mnozstvo && row.cena_polozky) {\n        row.celkova_suma = flt(row.mnozstvo) * flt(row.cena_polozky);\n        frm.refresh_field('polozky'); // replace with the actual child table fieldname if different\n    }\n}",
+  "view": "Form"
+ }
+]
