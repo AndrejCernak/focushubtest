@@ -257,7 +257,9 @@ override_whitelisted_modules = {
     "focus_hub": "focus_hub.config.focus_hub"
 }
 
-fixtures = ["Workspace"]
+
+fixtures = ["Client Script"]
+
 
 
 
