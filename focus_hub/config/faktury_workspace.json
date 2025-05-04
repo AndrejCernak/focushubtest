@@ -1,0 +1,29 @@
+{
+    "label": "Faktúry",
+    "module": "Focus Hub",
+    "type": "module",
+    "icon": "octicon octicon-file-directory",
+    "app": "focus_hub",
+    "is_standard": 1,
+    "public": 1,
+    "content": [
+      {
+        "type": "card",
+        "label": "Faktúry",
+        "icon": "octicon octicon-file-directory",
+        "items": [
+          {
+            "type": "doctype",
+            "name": "Faktura Vystavena",
+            "label": "Vystavené Faktúry"
+          },
+          {
+            "type": "doctype",
+            "name": "Faktura Prijata",
+            "label": "Prijaté Faktúry"
+          }
+        ]
+      }
+    ]
+  }
+  
