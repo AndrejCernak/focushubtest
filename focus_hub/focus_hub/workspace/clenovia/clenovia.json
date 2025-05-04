@@ -1,0 +1,16 @@
+{
+  "doctype": "Workspace",
+  "name": "Členovia",
+  "module": "Focus Hub",
+  "label": "Členovia",
+  "title": "Členovia",
+  "public": 1,
+  "is_hidden": 0,
+  "icon": "users",
+  "for_user": "",
+  "hide_custom": 1,
+  "sequence_id": 5,
+  "link_type": "DocType",
+  "link_to": "Clenovia",
+  "content": "[]"
+}
