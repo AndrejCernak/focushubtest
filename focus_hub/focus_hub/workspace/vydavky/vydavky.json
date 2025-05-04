@@ -1,0 +1,16 @@
+{
+  "doctype": "Workspace",
+  "name": "Výdavky",
+  "module": "Focus Hub",
+  "label": "Výdavky",
+  "title": "Výdavky",
+  "public": 1,
+  "is_hidden": 0,
+  "icon": "currency-euro",
+  "for_user": "",
+  "hide_custom": 1,
+  "sequence_id": 4,
+  "link_type": "DocType",
+  "link_to": "Vydavky",
+  "content": "[]"
+}
