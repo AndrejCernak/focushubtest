@@ -256,3 +256,12 @@ app_include_js = "/assets/focus_hub/js/focus_hub.js"
 override_whitelisted_modules = {
     "focus_hub": "focus_hub.config.focus_hub"
 }
+
+fixtures = [
+    "Workspace",
+    "Custom Field",
+    "Client Script",
+    "Property Setter"
+]
+
+
