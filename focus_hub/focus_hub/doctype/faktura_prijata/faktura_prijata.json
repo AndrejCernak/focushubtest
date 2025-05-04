@@ -1,176 +1,216 @@
 {
-    "actions": [],
-    "autoname": "autoincrement",
-    "creation": "2025-03-11 14:46:19.935869",
-    "doctype": "DocType",
-    "engine": "InnoDB",
-    "field_order": [
-      "informacie_section",
-      "cislo_faktury",
-      "datum_vydania",
-      "datum_splatnosti",
-      "section_break_fygh",
-      "meno_dodavatela",
-      "adresa_dodavatela",
-      "id_dodavatela",
-      "dph_dodavatela",
-      "section_break_pxmw",
-      "polozky",
-      "section_break_bgxj",
-      "celkom_bez_dane",
-      "celkom_dan",
-      "celkom_s_danou",
-      "section_break_olay",
-      "bankovy_ucet",
-      "variabilny_symbol",
-      "konstantny_symbol",
-      "specificky_symbol",
-      "section_break_isly",
-      "linked_vydavky"
-    ],
-    "fields": [
-      {
-        "fieldname": "informacie_section",
-        "fieldtype": "Section Break",
-        "label": "Informacie"
-      },
-      {
-        "fieldname": "cislo_faktury",
-        "fieldtype": "Data",
-        "in_list_view": 1,
-        "label": "Číslo Faktúry"
-      },
-      {
-        "fieldname": "datum_vydania",
-        "fieldtype": "Date",
-        "in_list_view": 1,
-        "label": "Dátum vydania"
-      },
-      {
-        "fieldname": "datum_splatnosti",
-        "fieldtype": "Date",
-        "in_list_view": 1,
-        "label": "Dátum splatnosti"
-      },
-      {
-        "fieldname": "section_break_fygh",
-        "fieldtype": "Section Break",
-        "label": ""
-      },
-      {
-        "fieldname": "meno_dodavatela",
-        "fieldtype": "Data",
-        "label": "Meno dodávateľa"
-      },
-      {
-        "fieldname": "adresa_dodavatela",
-        "fieldtype": "Text",
-        "label": "Adresa dodávateľa"
-      },
-      {
-        "fieldname": "id_dodavatela",
-        "fieldtype": "Data",
-        "label": "ID dodávateľa"
-      },
-      {
-        "fieldname": "dph_dodavatela",
-        "fieldtype": "Data",
-        "label": "DPH dodávateľa"
-      },
-      {
-        "fieldname": "section_break_pxmw",
-        "fieldtype": "Section Break",
-        "label": ""
-      },
-      {
-        "fieldname": "polozky",
-        "fieldtype": "Table",
-        "label": "Položky",
-        "options": "Faktura_items",
-        "is_grid_editable": 1
-
-      },
-      {
-        "fieldname": "section_break_bgxj",
-        "fieldtype": "Section Break",
-        "label": ""
-      },
-      {
-        "fieldname": "celkom_bez_dane",
-        "fieldtype": "Currency",
-        "label": "Celkom bez dane"
-      },
-      {
-        "fieldname": "celkom_dan",
-        "fieldtype": "Currency",
-        "label": "Celkom daň"
-      },
-      {
-        "fieldname": "celkom_s_danou",
-        "fieldtype": "Currency",
-        "label": "Celkom s daňou"
-      },
-      {
-        "fieldname": "section_break_olay",
-        "fieldtype": "Section Break",
-        "label": ""
-      },
-      {
-        "fieldname": "bankovy_ucet",
-        "fieldtype": "Data",
-        "label": "Bankový účet"
-      },
-      {
-        "fieldname": "variabilny_symbol",
-        "fieldtype": "Data",
-        "label": "Variabilný symbol"
-      },
-      {
-        "fieldname": "konstantny_symbol",
-        "fieldtype": "Data",
-        "label": "Konštantný symbol"
-      },
-      {
-        "fieldname": "specificky_symbol",
-        "fieldtype": "Data",
-        "label": "Špecifický symbol"
-      },
-      {
-        "fieldname": "section_break_isly",
-        "fieldtype": "Section Break",
-        "label": ""
-      },
-      {
-        "fieldname": "linked_vydavky",
-        "fieldtype": "Link",
-        "hidden": 1,
-        "options": "Vydavky"
-      }
-    ],
-    "index_web_pages_for_search": 1,
-    "links": [],
-    "modified": "2025-03-12 12:56:19.056802",
-    "modified_by": "Administrator",
-    "module": "Focus Hub",
-    "name": "Faktura Prijata",
-    "naming_rule": "Autoincrement",
-    "owner": "Administrator",
-    "permissions": [
-      {
-        "create": 1,
-        "delete": 1,
-        "email": 1,
-        "export": 1,
-        "print": 1,
-        "read": 1,
-        "report": 1,
-        "role": "System Manager",
-        "share": 1,
-        "write": 1
-      }
-    ],
-    "sort_field": "modified",
-    "sort_order": "DESC",
-    "states": []
-  }
-  
+  "actions": [],
+  "autoname": "autoincrement",
+  "creation": "2025-03-11 14:46:19.935869",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "informacie_section",
+    "cislo_faktury",
+    "datum_vydania",
+    "datum_splatnosti",
+    "section_break_fygh",
+    "meno_dodavatela",
+    "dalsie_udaje_section",
+    "ulica_a_cislo",
+    "mesto",
+    "psc",
+    "ico",
+    "dic",
+    "ic_dph",
+    "adresa_dodavatela",
+    "id_dodavatela",
+    "dph_dodavatela",
+    "section_break_pxmw",
+    "polozky",
+    "section_break_bgxj",
+    "celkom_bez_dane",
+    "celkom_dan",
+    "celkom_s_danou",
+    "section_break_olay",
+    "bankovy_ucet",
+    "variabilny_symbol",
+    "konstantny_symbol",
+    "specificky_symbol",
+    "section_break_isly",
+    "linked_vydavky"
+  ],
+  "fields": [
+    {
+      "fieldname": "informacie_section",
+      "fieldtype": "Section Break",
+      "label": "Informacie"
+    },
+    {
+      "fieldname": "cislo_faktury",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Číslo Faktúry"
+    },
+    {
+      "fieldname": "datum_vydania",
+      "fieldtype": "Date",
+      "in_list_view": 1,
+      "label": "Dátum vydania"
+    },
+    {
+      "fieldname": "datum_splatnosti",
+      "fieldtype": "Date",
+      "in_list_view": 1,
+      "label": "Dátum splatnosti"
+    },
+    {
+      "fieldname": "section_break_fygh",
+      "fieldtype": "Section Break",
+      "label": ""
+    },
+    {
+      "fieldname": "meno_dodavatela",
+      "fieldtype": "Data",
+      "label": "Meno dodávateľa"
+    },
+    {
+      "fieldname": "dalsie_udaje_section",
+      "fieldtype": "Section Break",
+      "label": "Ďalšie údaje zákazníka:"
+    },
+    {
+      "fieldname": "ulica_a_cislo",
+      "fieldtype": "Data",
+      "label": "Ulica a číslo"
+    },
+    {
+      "fieldname": "mesto",
+      "fieldtype": "Data",
+      "label": "Mesto"
+    },
+    {
+      "fieldname": "psc",
+      "fieldtype": "Data",
+      "label": "PSČ"
+    },
+    {
+      "fieldname": "ico",
+      "fieldtype": "Data",
+      "label": "IČO"
+    },
+    {
+      "fieldname": "dic",
+      "fieldtype": "Data",
+      "label": "DIČ"
+    },
+    {
+      "fieldname": "ic_dph",
+      "fieldtype": "Data",
+      "label": "IČ DPH"
+    },
+    {
+      "fieldname": "adresa_dodavatela",
+      "fieldtype": "Text",
+      "label": "Adresa dodávateľa"
+    },
+    {
+      "fieldname": "id_dodavatela",
+      "fieldtype": "Data",
+      "label": "ID dodávateľa"
+    },
+    {
+      "fieldname": "dph_dodavatela",
+      "fieldtype": "Data",
+      "label": "DPH dodávateľa"
+    },
+    {
+      "fieldname": "section_break_pxmw",
+      "fieldtype": "Section Break",
+      "label": ""
+    },
+    {
+      "fieldname": "polozky",
+      "fieldtype": "Table",
+      "label": "Položky",
+      "options": "Faktura_items",
+      "is_grid_editable": 1
+    },
+    {
+      "fieldname": "section_break_bgxj",
+      "fieldtype": "Section Break",
+      "label": ""
+    },
+    {
+      "fieldname": "celkom_bez_dane",
+      "fieldtype": "Currency",
+      "label": "Celkom bez dane"
+    },
+    {
+      "fieldname": "celkom_dan",
+      "fieldtype": "Currency",
+      "label": "Celkom daň"
+    },
+    {
+      "fieldname": "celkom_s_danou",
+      "fieldtype": "Currency",
+      "label": "Celkom s daňou"
+    },
+    {
+      "fieldname": "section_break_olay",
+      "fieldtype": "Section Break",
+      "label": ""
+    },
+    {
+      "fieldname": "bankovy_ucet",
+      "fieldtype": "Data",
+      "label": "Bankový účet"
+    },
+    {
+      "fieldname": "variabilny_symbol",
+      "fieldtype": "Data",
+      "label": "Variabilný symbol"
+    },
+    {
+      "fieldname": "konstantny_symbol",
+      "fieldtype": "Data",
+      "label": "Konštantný symbol"
+    },
+    {
+      "fieldname": "specificky_symbol",
+      "fieldtype": "Data",
+      "label": "Špecifický symbol"
+    },
+    {
+      "fieldname": "section_break_isly",
+      "fieldtype": "Section Break",
+      "label": ""
+    },
+    {
+      "fieldname": "linked_vydavky",
+      "fieldtype": "Link",
+      "hidden": 1,
+      "options": "Vydavky"
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "links": [],
+  "modified": "2025-03-12 12:56:19.056802",
+  "modified_by": "Administrator",
+  "module": "Focus Hub",
+  "name": "Faktura Prijata",
+  "naming_rule": "Autoincrement",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": []
+}
