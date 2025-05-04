@@ -9,12 +9,20 @@
   "is_hidden": 0,
   "icon": "users",
   "hide_custom": 1,
-  "type": "Link",
-  "link_type": "DocType",
-  "link_to": "Clenovia",
+  "type": "Module",
   "sequence_id": 1,
   "content": "[]",
-  "links": [],
+  "links": [
+    {
+      "doctype": "Workspace Link",
+      "type": "Card",
+      "label": "Členovia",
+      "link_type": "DocType",
+      "link_to": "Clenovia",
+      "icon": "users",
+      "idx": 1
+    }
+  ],
   "shortcuts": [],
   "charts": [],
   "number_cards": [],
