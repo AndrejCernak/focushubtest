@@ -1,0 +1,12 @@
+{
+  "doctype": "Workspace Number Card",
+  "name": "card_vystavene",
+  "number_card_name": "Vystavené Faktúry",
+  "label": "Vystavené Faktúry",
+  "parent": "Focushub",
+  "parenttype": "Workspace",
+  "parentfield": "number_cards",
+  "idx": 3,
+  "owner": "Administrator",
+  "docstatus": 0
+}
