@@ -1,0 +1,16 @@
+{
+  "doctype": "Workspace",
+  "name": "Faktura Prijatá",
+  "module": "Focus Hub",
+  "label": "Faktura Prijatá",
+  "title": "Faktura Prijatá",
+  "public": 1,
+  "is_hidden": 0,
+  "icon": "receipt",
+  "for_user": "",
+  "hide_custom": 1,
+  "sequence_id": 1,
+  "link_type": "DocType",
+  "link_to": "Faktura Prijata",
+  "content": "[]"
+}
