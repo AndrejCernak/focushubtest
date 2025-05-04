@@ -1,49 +1,41 @@
-# File: apps/focus_hub/focus_hub/config/desktop.py
 from frappe import _
 
 def get_data():
-    return [
-        {
-            "label": _("Faktúry"),
-            "icon": "octicon octicon-file",
-            "items": [
-                {
-                    "type": "doctype",
-                    "name": "Faktura Vystavena",
-                    "label": _("Faktúra Vystavená"),
-                },
-                {
-                    "type": "doctype",
-                    "name": "Faktura Prijata",
-                    "label": _("Faktúra Prijatá"),
-                }
-            ]
-        },
-        {
-            "label": _("Financie"),
-            "icon": "octicon octicon-credit-card",
-            "items": [
-                {
-                    "type": "doctype",
-                    "name": "Prijmy",
-                    "label": _("Príjmy"),
-                },
-                {
-                    "type": "doctype",
-                    "name": "Vydavky",
-                    "label": _("Výdavky"),
-                }
-            ]
-        },
-        {
-            "label": _("Ľudia"),
-            "icon": "octicon octicon-person",
-            "items": [
-                {
-                    "type": "doctype",
-                    "name": "Customer",
-                    "label": _("Zákazníci"),
-                }
-            ]
-        }
-    ]
+	return [
+		{
+			"module_name": "Focus Hub",
+			"label": _("Focus Hub"),
+			"type": "module",
+			"icon": "octicon octicon-briefcase"
+		},
+		{
+			"module_name": "Faktúry",
+			"label": _("Faktúry"),
+			"type": "module",
+			"icon": "octicon octicon-file-directory"
+		},
+		{
+			"module_name": "Vystavené Faktúry",
+			"label": _("Vystavené Faktúry"),
+			"type": "module",
+			"icon": "octicon octicon-file-submodule"
+		},
+		{
+			"module_name": "Prijaté Faktúry",
+			"label": _("Prijaté Faktúry"),
+			"type": "module",
+			"icon": "octicon octicon-file-submodule"
+		},
+		{
+			"module_name": "Výdavky",
+			"label": _("Výdavky"),
+			"type": "module",
+			"icon": "octicon octicon-file-submodule"
+		},
+		{
+			"module_name": "Členovia",
+			"label": _("Členovia"),
+			"type": "module",
+			"icon": "octicon octicon-organization"
+		}
+	]
