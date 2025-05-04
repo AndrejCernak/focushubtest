@@ -9,9 +9,6 @@
     "popis",
     "mnozstvo",
     "cena_polozky",
-    "jednotka",
-    "sadzba_dane",
-    "vyska_dane",
     "celkova_suma"
   ],
   "fields": [
@@ -34,22 +31,6 @@
       "fieldname": "cena_polozky",
       "fieldtype": "Currency",
       "label": "Cena položky"
-    },
-    {
-      "fieldname": "jednotka",
-      "fieldtype": "Data",
-      "label": "Jednotka",
-      "description": "napr. ks,hodiny"
-    },
-    {
-      "fieldname": "sadzba_dane",
-      "fieldtype": "Percent",
-      "label": "Sadzba dane"
-    },
-    {
-      "fieldname": "vyska_dane",
-      "fieldtype": "Currency",
-      "label": "Výška dane"
     },
     {
       "fieldname": "celkova_suma",
