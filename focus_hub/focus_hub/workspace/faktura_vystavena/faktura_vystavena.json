@@ -1,0 +1,16 @@
+{
+  "doctype": "Workspace",
+  "name": "Faktura Vystavená",
+  "module": "Focus Hub",
+  "label": "Faktura Vystavená",
+  "title": "Faktura Vystavená",
+  "public": 1,
+  "is_hidden": 0,
+  "icon": "receipt",
+  "for_user": "",
+  "hide_custom": 1,
+  "sequence_id": 2,
+  "link_type": "DocType",
+  "link_to": "Faktura Vystavena",
+  "content": "[]"
+}
