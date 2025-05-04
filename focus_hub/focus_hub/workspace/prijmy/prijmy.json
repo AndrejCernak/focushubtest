@@ -1,0 +1,16 @@
+{
+  "doctype": "Workspace",
+  "name": "Príjmy",
+  "module": "Focus Hub",
+  "label": "Príjmy",
+  "title": "Príjmy",
+  "public": 1,
+  "is_hidden": 0,
+  "icon": "currency-euro",
+  "for_user": "",
+  "hide_custom": 1,
+  "sequence_id": 3,
+  "link_type": "DocType",
+  "link_to": "Prijmy",
+  "content": "[]"
+}
