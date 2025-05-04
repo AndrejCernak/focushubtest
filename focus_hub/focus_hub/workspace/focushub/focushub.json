@@ -101,8 +101,54 @@
       "doctype": "Workspace Chart"
     }
   ],
+  "links": [
+    {
+      "link_type": "DocType",
+      "link_to": "Faktura Prijata",
+      "label": "Faktura Prijatá",
+      "icon": "receipt",
+      "type": "Card",
+      "dependencies": [],
+      "doctype": "Workspace Link"
+    },
+    {
+      "link_type": "DocType",
+      "link_to": "Faktura Vystavena",
+      "label": "Faktura Vystavená",
+      "icon": "receipt",
+      "type": "Card",
+      "dependencies": [],
+      "doctype": "Workspace Link"
+    },
+    {
+      "link_type": "DocType",
+      "link_to": "Prijmy",
+      "label": "Príjmy",
+      "icon": "currency-euro",
+      "type": "Card",
+      "dependencies": [],
+      "doctype": "Workspace Link"
+    },
+    {
+      "link_type": "DocType",
+      "link_to": "Vydavky",
+      "label": "Výdavky",
+      "icon": "currency-euro",
+      "type": "Card",
+      "dependencies": [],
+      "doctype": "Workspace Link"
+    },
+    {
+      "link_type": "DocType",
+      "link_to": "Clenovia",
+      "label": "Členovia",
+      "icon": "users",
+      "type": "Card",
+      "dependencies": [],
+      "doctype": "Workspace Link"
+    }
+  ],
   "shortcuts": [],
-  "links": [],
   "quick_lists": [],
   "custom_blocks": [],
   "roles": []
