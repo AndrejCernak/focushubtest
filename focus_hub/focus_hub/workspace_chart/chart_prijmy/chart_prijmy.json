@@ -1,0 +1,12 @@
+{
+  "doctype": "Workspace Chart",
+  "name": "chart_prijmy",
+  "chart_name": "Príjmy",
+  "label": "Príjmy",
+  "parent": "Focushub",
+  "parenttype": "Workspace",
+  "parentfield": "charts",
+  "idx": 1,
+  "owner": "Administrator",
+  "docstatus": 0
+}
