@@ -259,7 +259,6 @@ override_whitelisted_modules = {
 
 fixtures = ["Workspace"]
 
-after_install = "focus_hub.install.load_workspaces"
 
 
 
