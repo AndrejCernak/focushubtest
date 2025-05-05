@@ -11,6 +11,14 @@
     "datum_splatnosti",
     "section_break_fygh",
     "meno_dodavatela",
+    "ulica_a_cislo_dodavatela",
+    "mesto_dodavatela",
+    "psc_dodavatela",
+    "ico_dodavatela",
+    "dic_dodavatela",
+    "ic_dph_dodavatela",
+    "id_dodavatela",
+    "dph_dodavatela",
     "dalsie_udaje_section",
     "ulica_a_cislo",
     "mesto",
@@ -18,9 +26,6 @@
     "ico",
     "dic",
     "ic_dph",
-    "adresa_dodavatela",
-    "id_dodavatela",
-    "dph_dodavatela",
     "section_break_pxmw",
     "polozky",
     "section_break_bgxj",
@@ -70,6 +75,46 @@
       "label": "Meno dodávateľa"
     },
     {
+      "fieldname": "ulica_a_cislo_dodavatela",
+      "fieldtype": "Data",
+      "label": "Ulica a číslo dodávateľa"
+    },
+    {
+      "fieldname": "mesto_dodavatela",
+      "fieldtype": "Data",
+      "label": "Mesto dodávateľa"
+    },
+    {
+      "fieldname": "psc_dodavatela",
+      "fieldtype": "Data",
+      "label": "PSČ dodávateľa"
+    },
+    {
+      "fieldname": "ico_dodavatela",
+      "fieldtype": "Data",
+      "label": "IČO dodávateľa"
+    },
+    {
+      "fieldname": "dic_dodavatela",
+      "fieldtype": "Data",
+      "label": "DIČ dodávateľa"
+    },
+    {
+      "fieldname": "ic_dph_dodavatela",
+      "fieldtype": "Data",
+      "label": "IČ DPH dodávateľa"
+    },
+    {
+      "fieldname": "id_dodavatela",
+      "fieldtype": "Data",
+      "label": "ID dodávateľa"
+    },
+    {
+      "fieldname": "dph_dodavatela",
+      "fieldtype": "Data",
+      "label": "DPH dodávateľa"
+    },
+    {
       "fieldname": "dalsie_udaje_section",
       "fieldtype": "Section Break",
       "label": "Ďalšie údaje zákazníka:"
@@ -103,21 +148,6 @@
       "fieldname": "ic_dph",
       "fieldtype": "Data",
       "label": "IČ DPH"
-    },
-    {
-      "fieldname": "adresa_dodavatela",
-      "fieldtype": "Text",
-      "label": "Adresa dodávateľa"
-    },
-    {
-      "fieldname": "id_dodavatela",
-      "fieldtype": "Data",
-      "label": "ID dodávateľa"
-    },
-    {
-      "fieldname": "dph_dodavatela",
-      "fieldtype": "Data",
-      "label": "DPH dodávateľa"
     },
     {
       "fieldname": "section_break_pxmw",
