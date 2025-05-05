@@ -5,24 +5,26 @@
   "doctype": "DocType",
   "engine": "InnoDB",
   "field_order": [
-    "hlavné_polia_section",
+    "hlavne_polia_section",
     "cislo_faktury",
     "datum_vydania",
     "datum_splatnosti",
-    "dodávateľ_section",
+    "dodavatel_section",
     "meno_dodavatela",
     "ulica_a_cislo_dodavatela",
     "mesto_dodavatela",
     "psc_dodavatela",
     "ico_dodavatela",
     "dic_dodavatela",
-    "icdph_dodavatela",
-    "odberateľ_section",
-    "email_zakaznika",
-    "adresa_zakaznika",
+    "ic_dph_dodavatela",
+    "zakaznik_section",
+    "meno_zakaznika",
+    "ulica_a_cislo_zakaznika",
+    "mesto_zakaznika",
+    "psc_zakaznika",
     "ico_zakaznika",
     "dic_zakaznika",
-    "icdph_zakaznika",
+    "ic_dph_zakaznika",
     "polozky_section",
     "polozky",
     "celkove_sumy_section",
@@ -39,7 +41,7 @@
   ],
   "fields": [
     {
-      "fieldname": "hlavné_polia_section",
+      "fieldname": "hlavne_polia_section",
       "fieldtype": "Section Break",
       "label": "Hlavné polia"
     },
@@ -59,7 +61,7 @@
       "label": "Dátum splatnosti"
     },
     {
-      "fieldname": "dodávateľ_section",
+      "fieldname": "dodavatel_section",
       "fieldtype": "Section Break",
       "label": "Dodávateľ"
     },
@@ -94,24 +96,34 @@
       "label": "DIČ dodávateľa"
     },
     {
-      "fieldname": "icdph_dodavatela",
+      "fieldname": "ic_dph_dodavatela",
       "fieldtype": "Data",
       "label": "IČ DPH dodávateľa"
     },
     {
-      "fieldname": "odberateľ_section",
+      "fieldname": "zakaznik_section",
       "fieldtype": "Section Break",
-      "label": "Odberateľ"
+      "label": "Zákazník"
     },
     {
-      "fieldname": "email_zakaznika",
+      "fieldname": "meno_zakaznika",
       "fieldtype": "Data",
-      "label": "Email zákazníka"
+      "label": "Meno zákazníka"
     },
     {
-      "fieldname": "adresa_zakaznika",
-      "fieldtype": "Text",
-      "label": "Adresa zákazníka"
+      "fieldname": "ulica_a_cislo_zakaznika",
+      "fieldtype": "Data",
+      "label": "Ulica a číslo zákazníka"
+    },
+    {
+      "fieldname": "mesto_zakaznika",
+      "fieldtype": "Data",
+      "label": "Mesto zákazníka"
+    },
+    {
+      "fieldname": "psc_zakaznika",
+      "fieldtype": "Data",
+      "label": "PSČ zákazníka"
     },
     {
       "fieldname": "ico_zakaznika",
@@ -124,7 +136,7 @@
       "label": "DIČ zákazníka"
     },
     {
-      "fieldname": "icdph_zakaznika",
+      "fieldname": "ic_dph_zakaznika",
       "fieldtype": "Data",
       "label": "IČ DPH zákazníka"
     },
