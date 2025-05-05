@@ -11,20 +11,19 @@
     "datum_splatnosti",
     "dodavatel_section",
     "meno_dodavatela",
-    "ulica_a_cislo_dodavatela",
-    "mesto_dodavatela",
+    "ulica_dodavatela",
     "psc_dodavatela",
     "ico_dodavatela",
     "dic_dodavatela",
-    "ic_dph_dodavatela",
-    "zakaznik_section",
+    "icdph_dodavatela",
+    "odberatel_section",
     "meno_zakaznika",
-    "ulica_a_cislo_zakaznika",
-    "mesto_zakaznika",
+    "ulica_zakaznika",
     "psc_zakaznika",
+    "email_zakaznika",
     "ico_zakaznika",
     "dic_zakaznika",
-    "ic_dph_zakaznika",
+    "icdph_zakaznika",
     "polozky_section",
     "polozky",
     "celkove_sumy_section",
@@ -71,14 +70,9 @@
       "label": "Meno dodávateľa"
     },
     {
-      "fieldname": "ulica_a_cislo_dodavatela",
+      "fieldname": "ulica_dodavatela",
       "fieldtype": "Data",
       "label": "Ulica a číslo dodávateľa"
-    },
-    {
-      "fieldname": "mesto_dodavatela",
-      "fieldtype": "Data",
-      "label": "Mesto dodávateľa"
     },
     {
       "fieldname": "psc_dodavatela",
@@ -96,14 +90,14 @@
       "label": "DIČ dodávateľa"
     },
     {
-      "fieldname": "ic_dph_dodavatela",
+      "fieldname": "icdph_dodavatela",
       "fieldtype": "Data",
       "label": "IČ DPH dodávateľa"
     },
     {
-      "fieldname": "zakaznik_section",
+      "fieldname": "odberatel_section",
       "fieldtype": "Section Break",
-      "label": "Zákazník"
+      "label": "Odberateľ"
     },
     {
       "fieldname": "meno_zakaznika",
@@ -111,19 +105,19 @@
       "label": "Meno zákazníka"
     },
     {
-      "fieldname": "ulica_a_cislo_zakaznika",
+      "fieldname": "ulica_zakaznika",
       "fieldtype": "Data",
       "label": "Ulica a číslo zákazníka"
-    },
-    {
-      "fieldname": "mesto_zakaznika",
-      "fieldtype": "Data",
-      "label": "Mesto zákazníka"
     },
     {
       "fieldname": "psc_zakaznika",
       "fieldtype": "Data",
       "label": "PSČ zákazníka"
+    },
+    {
+      "fieldname": "email_zakaznika",
+      "fieldtype": "Data",
+      "label": "Email zákazníka"
     },
     {
       "fieldname": "ico_zakaznika",
@@ -136,7 +130,7 @@
       "label": "DIČ zákazníka"
     },
     {
-      "fieldname": "ic_dph_zakaznika",
+      "fieldname": "icdph_zakaznika",
       "fieldtype": "Data",
       "label": "IČ DPH zákazníka"
     },
@@ -212,7 +206,7 @@
   ],
   "index_web_pages_for_search": 1,
   "links": [],
-  "modified": "2025-03-12 12:56:10.729695",
+  "modified": "2025-05-05 14:40:00.000000",
   "modified_by": "Administrator",
   "module": "Focus Hub",
   "name": "Faktura Vystavena",
