@@ -17,8 +17,6 @@
     "ico_dodavatela",
     "dic_dodavatela",
     "ic_dph_dodavatela",
-    "id_dodavatela",
-    "dph_dodavatela",
     "dalsie_udaje_section",
     "ulica_a_cislo",
     "mesto",
@@ -103,16 +101,6 @@
       "fieldname": "ic_dph_dodavatela",
       "fieldtype": "Data",
       "label": "IČ DPH dodávateľa"
-    },
-    {
-      "fieldname": "id_dodavatela",
-      "fieldtype": "Data",
-      "label": "ID dodávateľa"
-    },
-    {
-      "fieldname": "dph_dodavatela",
-      "fieldtype": "Data",
-      "label": "DPH dodávateľa"
     },
     {
       "fieldname": "dalsie_udaje_section",
